@@ -16,8 +16,7 @@ struct AppetizerDetailView: View {
         // the card
         VStack {
             // food image
-            Image("asian-flank-steak")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             
