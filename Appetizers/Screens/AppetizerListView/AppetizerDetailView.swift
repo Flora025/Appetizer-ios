@@ -10,6 +10,7 @@ import SwiftUI
 struct AppetizerDetailView: View {
     
     let appetizer: Appetizer
+    @Binding var isShowingDetail: Bool
     
     var body: some View {
         // the card
@@ -44,6 +45,7 @@ struct AppetizerDetailView: View {
                             .italic()
                     }
                     
+                    // carbons
                     VStack (spacing: 5) {
                         Text("Carbs")
                             .bold()
@@ -55,6 +57,7 @@ struct AppetizerDetailView: View {
                             .italic()
                     }
                     
+                    // protein
                     VStack (spacing: 5) {
                         Text("Protein")
                             .bold()
@@ -89,7 +92,7 @@ struct AppetizerDetailView: View {
         .shadow(radius: 40) // drop shadow
         // the button on the top right
         .overlay(Button {
-            print("dismiss")
+            isShowingDetail = false
         } label: {
             ZStack {
                 Circle()
@@ -107,6 +110,8 @@ struct AppetizerDetailView: View {
 
 struct AppetizerDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+        AppetizerDetailView(
+            appetizer: MockData.sampleAppetizer,
+            isShowingDetail: .constant(true))
     }
 }
