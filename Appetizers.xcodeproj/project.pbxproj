@@ -31,6 +31,7 @@
 		791C70BD2BEBB78600DC5BB6 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70BC2BEBB78600DC5BB6 /* XDismissButton.swift */; };
 		791C70BF2BEBC0C200DC5BB6 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70BE2BEBC0C200DC5BB6 /* AccountViewModel.swift */; };
 		791C70C12BEBC1DF00DC5BB6 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70C02BEBC1DF00DC5BB6 /* String+Ext.swift */; };
+		791C70C32BEBC4A000DC5BB6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70C22BEBC4A000DC5BB6 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		791C70BC2BEBB78600DC5BB6 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		791C70BE2BEBC0C200DC5BB6 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		791C70C02BEBC1DF00DC5BB6 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		791C70C22BEBC4A000DC5BB6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				791C70962BEAB7C200DC5BB6 /* Appetizer.swift */,
+				791C70C22BEBC4A000DC5BB6 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				791C709F2BEB0F0300DC5BB6 /* AppetizerListViewModel.swift in Sources */,
 				791C70A52BEB172B00DC5BB6 /* Color+Ext.swift in Sources */,
 				791C70932BEAB1DE00DC5BB6 /* AccountView.swift in Sources */,
+				791C70C32BEBC4A000DC5BB6 /* User.swift in Sources */,
 				791C70BB2BEBB6E400DC5BB6 /* APButton.swift in Sources */,
 				791C70A32BEB164000DC5BB6 /* LoadingView.swift in Sources */,
 				791C70692BEAB13800DC5BB6 /* AppetizerTabView.swift in Sources */,
