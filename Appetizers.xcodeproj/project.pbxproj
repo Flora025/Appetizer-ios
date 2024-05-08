@@ -21,6 +21,7 @@
 		791C70992BEABE5D00DC5BB6 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70982BEABE5D00DC5BB6 /* AppetizerListCell.swift */; };
 		791C709B2BEB089500DC5BB6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C709A2BEB089500DC5BB6 /* NetworkManager.swift */; };
 		791C709D2BEB095900DC5BB6 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C709C2BEB095900DC5BB6 /* APError.swift */; };
+		791C709F2BEB0F0300DC5BB6 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C709E2BEB0F0300DC5BB6 /* AppetizerListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		791C70982BEABE5D00DC5BB6 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		791C709A2BEB089500DC5BB6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		791C709C2BEB095900DC5BB6 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
+		791C709E2BEB0F0300DC5BB6 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				791C70982BEABE5D00DC5BB6 /* AppetizerListCell.swift */,
 				791C709A2BEB089500DC5BB6 /* NetworkManager.swift */,
 				791C709C2BEB095900DC5BB6 /* APError.swift */,
+				791C709E2BEB0F0300DC5BB6 /* AppetizerListViewModel.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				791C70972BEAB7C200DC5BB6 /* Appetizer.swift in Sources */,
 				791C709D2BEB095900DC5BB6 /* APError.swift in Sources */,
 				791C70992BEABE5D00DC5BB6 /* AppetizerListCell.swift in Sources */,
+				791C709F2BEB0F0300DC5BB6 /* AppetizerListViewModel.swift in Sources */,
 				791C70932BEAB1DE00DC5BB6 /* AccountView.swift in Sources */,
 				791C70692BEAB13800DC5BB6 /* AppetizerTabView.swift in Sources */,
 				791C709B2BEB089500DC5BB6 /* NetworkManager.swift in Sources */,
