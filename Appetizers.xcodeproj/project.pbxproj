@@ -34,6 +34,7 @@
 		791C70C32BEBC4A000DC5BB6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70C22BEBC4A000DC5BB6 /* User.swift */; };
 		791C70C52BEBFCAA00DC5BB6 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70C42BEBFCAA00DC5BB6 /* EmptyState.swift */; };
 		791C70C72BEBFF4800DC5BB6 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70C62BEBFF4800DC5BB6 /* Order.swift */; };
+		791C70C92BEC424000DC5BB6 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791C70C82BEC424000DC5BB6 /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		791C70C22BEBC4A000DC5BB6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		791C70C42BEBFCAA00DC5BB6 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		791C70C62BEBFF4800DC5BB6 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		791C70C82BEC424000DC5BB6 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 			children = (
 				791C70A42BEB172B00DC5BB6 /* Color+Ext.swift */,
 				791C70C02BEBC1DF00DC5BB6 /* String+Ext.swift */,
+				791C70C82BEC424000DC5BB6 /* Date+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				791C709D2BEB095900DC5BB6 /* APError.swift in Sources */,
 				791C70BD2BEBB78600DC5BB6 /* XDismissButton.swift in Sources */,
 				791C70992BEABE5D00DC5BB6 /* AppetizerListCell.swift in Sources */,
+				791C70C92BEC424000DC5BB6 /* Date+Ext.swift in Sources */,
 				791C70C72BEBFF4800DC5BB6 /* Order.swift in Sources */,
 				791C70BF2BEBC0C200DC5BB6 /* AccountViewModel.swift in Sources */,
 				791C709F2BEB0F0300DC5BB6 /* AppetizerListViewModel.swift in Sources */,

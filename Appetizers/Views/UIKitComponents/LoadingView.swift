@@ -29,7 +29,10 @@ struct LoadingView: View {
             Color(.systemBackground)
                 .edgesIgnoringSafeArea(.all)
             
-            ActivityIndicator() // create the loading sign
+//            ActivityIndicator() // create the loading sign
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle(tint: .brandPrimary))
+                .scaleEffect(2)
         }
     }
 }

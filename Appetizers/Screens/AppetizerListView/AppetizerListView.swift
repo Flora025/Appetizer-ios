@@ -23,6 +23,7 @@ struct AppetizerListView: View {
                         }
                 }
                 .navigationTitle("🍟 Appetizers")
+                .listStyle(.plain)
                 .disabled(viewModel.isShowingDetail) // disable scrolling when showing detail
             }
             .onAppear { // make network call to retrieve appetizers
