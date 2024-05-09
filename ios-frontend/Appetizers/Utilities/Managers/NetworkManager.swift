@@ -87,4 +87,71 @@ final class NetworkManager {
         
         task.resume()
     }
+    
+    func addOrderItem(_ appetizer: Appetizer) {
+        guard let url = URL(string: "http://your-api-url/api/orderitem") else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        // init object
+        let newOrderItem: [String: Any] = [
+            "name": appetizer.name,
+            "description": appetizer.description,
+            "price": appetizer.price,
+            "imageURL": appetizer.imageURL,
+            "calories": appetizer.calories,
+            "protein": appetizer.protein,
+            "carbs": appetizer.carbs
+        ]
+        
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: newOrderItem, options: [])
+        } catch {
+            print("Error encoding order item:", error)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                print("Error adding order item:", error)
+                return
+            }
+            
+            // deal with response
+            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 201 {
+                print("Order item added successfully")
+            } else {
+                print("Failed to add order item")
+            }
+        }
+        
+        task.resume()
+    }
+
+    
+    func deleteOrderItem(itemID: Int) {
+        let urlString = "http://your-api-url/api/orderitem/\(itemID)"
+        guard let url = URL(string: urlString) else { return }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "DELETE"
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                print("Error deleting order item:", error)
+                return
+            }
+            
+            // deal with response
+            if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                print("Order item deleted successfully")
+            } else {
+                print("Failed to delete order item")
+            }
+        }
+        
+        task.resume()
+    }
 }

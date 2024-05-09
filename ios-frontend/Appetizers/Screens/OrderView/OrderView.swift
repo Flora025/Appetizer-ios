@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OrderView: View {
-    
+    // local user data
     @EnvironmentObject var order: Order
     
     var body: some View {

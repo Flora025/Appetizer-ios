@@ -15,6 +15,4 @@ struct User: Codable {
     var extraNapkins = false
     var frequentRefills = false
     
-    
-    
 }

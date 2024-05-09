@@ -17,9 +17,18 @@ final class Order: ObservableObject {
     
     func add(_ appetizer: Appetizer) {
         items.append(appetizer)
+        // also add in db for backup
+        NetworkManager.shared.addOrderItem(appetizer)
     }
 
     func deleteItems(at offsets: IndexSet) {
         items.remove(atOffsets: offsets)
+        
+        // also delete in db for backup
+        let itemsToDelete = Array(offsets)
+        for index in itemsToDelete {
+            let appetizerToDelete = items[index]
+            NetworkManager.shared.deleteOrderItem(itemID: appetizerToDelete.id)
+        }
     }
 }

@@ -12,7 +12,7 @@ GET /api/users/{user_id}
 GET /api/appetizers
 ```
 
-Response
+Sample Response
 
 ```http 
  {
@@ -32,8 +32,6 @@ Response
 }
 ```
 
-
-
 ### Get Order Items
 
 ```http
@@ -43,17 +41,12 @@ GET /api/orderitems
 ### Delete Order Items
 
 ```http
-DELETE /api/orderitems/{item_id}
+DELETE /api/orderitem/{item_id}
 ```
 
 ### Add Order Item
 
 ```http
-POST /api/orderitems
-{
-  "item_name": "Example Item",
-  "quantity": 1,
-  "price": 9.99
-}
+POST /api/orderitem/{item_id}
 ```
 
