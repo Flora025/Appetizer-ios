@@ -13,7 +13,7 @@ final class NetworkManager {
     static let shared = NetworkManager()
     private let cache = NSCache<NSString, UIImage>()
     
-    static let baseURL = "https://localhost:3000/"
+    static let baseURL = "http://127.0.0.1:5000/"
     private let appetizerURL = baseURL + "appetizers"
     
     private init() {}
