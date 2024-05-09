@@ -1,4 +1,21 @@
-## Endpoints
+## To Start
+
+- Backend
+
+```bash
+# install flask before performing the following cmds
+$ cd backend
+$ . .venv/bin/activate # activate the environment
+$ flask --app app run
+```
+
+- iOS frontend
+
+open and build project in XCode
+
+
+
+## Server Endpoints
 
 ### Get User Profile Information
 
@@ -32,21 +49,45 @@ Sample Response
 }
 ```
 
-### Get Order Items
+### Get Order Item by ID
 
 ```http
-GET /api/orderitems
+GET /api/appetizer/<int:appetizer_id>
+```
+
+Sample Response
+
+```http
+{
+  "id": 1,
+  "name": "Asian Flank Steak",
+  "description": "This perfectly thin cut just melts in your mouth.",
+  "price": 8.99,
+  "calories": 300,
+  "protein": 14,
+  "carbs": 0,
+  "imageURL": "https://xxx/xxx.jpg"
+}
 ```
 
 ### Delete Order Items
 
 ```http
-DELETE /api/orderitem/{item_id}
+DELETE /api/appetizer/<int:appetizer_id>
 ```
 
 ### Add Order Item
 
 ```http
-POST /api/orderitem/{item_id}
+POST /api/appetizer
+{
+  "name": "New Item",
+  "description": "Description of the new item",
+  "price": 9.99,
+  "calories": 250,
+  "protein": 12,
+  "carbs": 20,
+  "imageURL": "https://example.com/image.jpg"
+}
 ```
 
